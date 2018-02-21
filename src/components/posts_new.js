@@ -25,7 +25,7 @@ class PostsNew extends Component {
 
   onSubmit(values){
     this.props.createPost(values, ()=>{
-      this.props.history.push('/');
+      this.props.history.push('/'); //sends us back to the main page
     });
   }
 
@@ -50,7 +50,7 @@ class PostsNew extends Component {
           component={this.renderField}
         />
         <button type='submit' className='btn btn-primary'>Submit</button>
-        <Link to='/' className='btn btn-danger'>Cancel</Link>
+        <Link to='/l' className='btn btn-danger'>Cancel</Link>
       </form>
     )
   }
